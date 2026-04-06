@@ -21,28 +21,30 @@ const config: Config = {
         muted: '#2a2a2a',
         'muted-foreground': '#a0a0a0',
       },
-      typography: (theme) => ({
+      typography: ({ theme }) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.muted.foreground'),
-            a: {
-              color: theme('colors.primary'),
-              '&:hover': {
-                color: theme('colors.primary'),
-              },
-            },
-            h1: {
-              color: theme('colors.foreground'),
-            },
-            h2: {
-              color: theme('colors.foreground'),
-            },
-            h3: {
-              color: theme('colors.foreground'),
-            },
-            strong: {
-              color: theme('colors.foreground'),
-            },
+            '--tw-prose-body': theme('colors.muted.foreground'),
+            '--tw-prose-headings': theme('colors.foreground'),
+            '--tw-prose-lead': theme('colors.muted.foreground'),
+            '--tw-prose-links': theme('colors.primary'),
+            '--tw-prose-bold': theme('colors.foreground'),
+            '--tw-prose-counters': theme('colors.muted.foreground'),
+            '--tw-prose-bullets': theme('colors.muted.foreground'),
+            '--tw-prose-hr': theme('colors.muted'),
+            '--tw-prose-quotes': theme('colors.foreground'),
+            '--tw-prose-quote-borders': theme('colors.muted'),
+            '--tw-prose-captions': theme('colors.muted.foreground'),
+            '--tw-prose-code': theme('colors.foreground'),
+            '--tw-prose-pre-code': theme('colors.foreground'),
+            '--tw-prose-pre-bg': theme('colors.muted'),
+            '--tw-prose-th-borders': theme('colors.muted'),
+            '--tw-prose-td-borders': theme('colors.muted'),
+            '--tw-prose-invert-body': theme('colors.foreground'),
+            '--tw-prose-invert-headings': theme('colors.foreground'),
+            '--tw-prose-invert-lead': theme('colors.foreground'),
+            '--tw-prose-invert-links': theme('colors.primary'),
+            '--tw-prose-invert-bold': theme('colors.foreground'),
           },
         },
       }),
